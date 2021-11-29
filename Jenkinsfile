@@ -20,7 +20,8 @@ pipeline{
                 }
             }
             steps{
-                cypress run --record --key XXX --parallel --ci-build-id 'testnov29'
+                echo "${ENV}"
+                echo "${BuildID}"
             }
         }
     }
