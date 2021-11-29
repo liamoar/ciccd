@@ -6,7 +6,7 @@ pipeline{
     }
 
     stages{
-        stage{
+        stage('Build Now'){
             agent any
             steps{
                 echo "---executing the code in ${ENV}"
